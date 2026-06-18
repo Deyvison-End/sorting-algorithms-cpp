@@ -181,8 +181,8 @@ template<class T>
 void quicksort(vector<T> &array, int start, int finish) {
 	if (finish <= start) return;
 	int pivot = partition(array, start, finish);
-	quicksort(array, start, pivot - 1);
-	quicksort(array, pivot + 1, finish);
+	 quicksort(array, start, pivot);     
+    quicksort(array, pivot + 1, finish);
 }
 
 
